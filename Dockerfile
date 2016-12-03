@@ -9,7 +9,7 @@ RUN yum -y update && \
 # Install nodebrew, node and npm
 RUN curl -L git.io/nodebrew | perl - setup
 ENV PATH $HOME/.nodebrew/current/bin:$PATH
-RUN echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> $HOME/.bashrc
-RUN source $HOME/.bashrc && \
+RUN echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> $HOME/.bashrc && \
+    source $HOME/.bashrc && \
     nodebrew install-binary stable && \
     nodebrew use stable
