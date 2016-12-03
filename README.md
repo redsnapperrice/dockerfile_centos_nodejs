@@ -1,4 +1,4 @@
-# dockerfile
+# dockerfile_centos_nodejs
 
 This is a Dockerfile for front-end engineers.  
 The file build a Docker Image including CentOS7 + nodebrew + nodejs + npm.  
